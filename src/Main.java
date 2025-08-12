@@ -34,7 +34,7 @@ public class Main {
                 flatRenovation.getId());
         Subtask flatRenovationSubtask2 = new Subtask("Установить новую технику", "Старую продать на Авито",
                 flatRenovation.getId());
-        Subtask flatRenovationSubtask3 = new Subtask("Заказать книжный шкаф", "Из темного дерева",
+        Subtask flatRenovationSubtask3 = new Subtask("Заказать журнальный столик", "Из темного дерева",
                 flatRenovation.getId());
         inMemoryTaskManager.addSubtask(flatRenovationSubtask1);
         inMemoryTaskManager.addSubtask(flatRenovationSubtask2);
