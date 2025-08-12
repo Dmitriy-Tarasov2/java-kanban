@@ -24,16 +24,17 @@ public class InMemoryHistoryManager implements HistoryManager {
         return new LinkedList<>(historyList);
     }
 
-    @Override
-    public void remove(int id) {
-        Iterator<Task> iterator = historyList.iterator();
-        while (iterator.hasNext()) {
-            Task task = iterator.next();
-            if (task.getId() == id) {
-                iterator.remove();
-                break;
-            }
+    class Node {
+        Task task;
+        Node prev;
+        Node next;
+
+        Node(Task task) {
+            this.task = task;
+            prev = null;
+            next = null;
         }
     }
+}
 
 }
