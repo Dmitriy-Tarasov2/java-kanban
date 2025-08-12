@@ -6,9 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class InMemoryHistoryManager implements HistoryManager {
-
-    private static final int MAX_HISTORY_STORAGE = 10;
-    private final LinkedList<Task> historyList = new LinkedList<>();
+    private HashMap<Integer, Node> taskMap = new HashMap<>();
+    private Node head;
+    private Node tail;
 
     @Override
     public void add(Task task) {
