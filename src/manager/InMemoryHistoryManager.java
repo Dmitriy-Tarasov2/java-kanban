@@ -23,7 +23,11 @@ public class InMemoryHistoryManager implements HistoryManager {
 
     @Override
     public List<Task> getHistory() {
-        return new LinkedList<>(historyList);
+        List<Task> history = new ArrayList<>();
+        for (Node node = head; node != null; node = node.next) {
+            history.add(node.task);
+        }
+        return history;
     }
 
     class Node {
