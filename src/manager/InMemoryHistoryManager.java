@@ -15,10 +15,42 @@ public class InMemoryHistoryManager implements HistoryManager {
         if (task == null) {
             return;
         }
-        if (historyList.size() == MAX_HISTORY_STORAGE) {
-            historyList.removeFirst();
+        Node node = new Node(task);
+        taskMap.put(task.getId(), node);
+        linkLast(node);
+    }
+
+    private void linkLast(Node node) {
+        if (tail == null) {
+            head = node;
+            tail = node;
+        } else {
+            node.prev = tail;
+            tail.next = node;
+            tail = node;
         }
-        historyList.add(task);
+    }
+
+    @Override
+    public void remove(int id) {
+        Node node = taskMap.remove(id);
+        if (node == null) {
+            return;
+        }
+        removeNode(node);
+    }
+
+    private void removeNode(Node node) {
+        if (head == node) {
+            head = node.next;
+        } else {
+            node.prev.next = node.next;
+        }
+        if (tail == node) {
+            tail = node.prev;
+        } else {
+            node.next.prev = node.prev;
+        }
     }
 
     @Override
