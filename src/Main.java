@@ -32,7 +32,7 @@ public class Main {
         inMemoryTaskManager.addEpic(flatRenovation);
         Subtask flatRenovationSubtask1 = new Subtask("Поклеить обои", "Обязательно светлые!",
                 flatRenovation.getId());
-        Subtask flatRenovationSubtask2 = new Subtask("Установить новую технику", "Старую продать на Авито",
+        Subtask flatRenovationSubtask2 = new Subtask("Заказать новую технику", "Старую продать на Авито",
                 flatRenovation.getId());
         Subtask flatRenovationSubtask3 = new Subtask("Заказать журнальный столик", "Из темного дерева",
                 flatRenovation.getId());
