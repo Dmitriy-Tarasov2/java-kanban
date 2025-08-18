@@ -62,7 +62,7 @@ public class InMemoryHistoryManager implements HistoryManager {
         return history;
     }
 
-    class Node {
+    private static class Node {
         Task task;
         Node prev;
         Node next;
