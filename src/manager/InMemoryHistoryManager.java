@@ -2,11 +2,12 @@ package manager;
 
 import model.Task;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
 
 public class InMemoryHistoryManager implements HistoryManager {
-    private HashMap<Integer, Node> taskMap = new HashMap<>();
+    private final Map<Integer, Node> taskMap = new HashMap<>();
     private Node head;
     private Node tail;
 
