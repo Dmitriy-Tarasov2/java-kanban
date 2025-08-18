@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import model.Task;
 import java.util.List;
+import manager.HistoryManager;
+import manager.InMemoryHistoryManager;
+
 
 
 public class InMemoryHistoryManagerTest {
