@@ -8,4 +8,4 @@
 ./src/model/Status.java
 ./src/model/Subtask.java
 ./src/model/Task.java
-./src/tests/InMemoryHistoryManagerTest.java
+./src/test/InMemoryHistoryManagerTest.java
