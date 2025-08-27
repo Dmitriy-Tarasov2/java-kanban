@@ -30,3 +30,7 @@ bin/
 
 # Compiled class file
 *.class
+
+
+*.iml
+.idea
