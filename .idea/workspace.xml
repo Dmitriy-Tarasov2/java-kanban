@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fdc072fd-52b8-44d8-90fc-48f303f2d7c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/gson-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/junit-jupiter-api-5.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/junit-jupiter-engine-5.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/junit-platform-commons-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/junit-platform-console-standalone-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/junit-platform-launcher-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +56,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "settings.qodana"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RunManager">
