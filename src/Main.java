@@ -5,16 +5,19 @@ import model.Status;
 import model.Subtask;
 import model.Task;
 import manager.TaskManager;
+import manager.HistoryManager;
 
 public class Main {
 
     private static final TaskManager inMemoryTaskManager = Managers.getDefault();
+    private static final HistoryManager inMemoryHistoryManager = Managers.getDefaultHistory();
 
     public static void main(String[] args) {
 
         addTasks();
         printAllTasks();
         printViewHistory();
+        removeTasks();
     }
 
     private static void addTasks() {
@@ -80,5 +83,11 @@ public class Main {
         for (Task task : Main.inMemoryTaskManager.getHistory()) {
             System.out.println(task);
         }
+    }
+
+    private static void removeTasks() {
+        int taskIdToRemove = 1;
+        inMemoryTaskManager.deleteTaskByID(taskIdToRemove);
+        Main.inMemoryHistoryManager.remove(taskIdToRemove);
     }
 }
